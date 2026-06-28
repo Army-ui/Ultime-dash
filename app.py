@@ -884,6 +884,8 @@ def export_pdf(n_clicks, depot, extension):
 # =========================
 # RUN
 # =========================
+server = app.server
+
 if __name__ == "__main__":
     debug_mode = os.environ.get("DEDUP_DEBUG", "0") == "1"
     app.run(debug=debug_mode, host="0.0.0.0", port=8050, use_reloader=False)
